@@ -114,15 +114,13 @@ body {
   color: #FFF;
   font-weight: 700;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /*about*/
 
 .about {
   padding: 94px 0 0;
-  
-  
-  
 }
 .global {
   display: flex;
