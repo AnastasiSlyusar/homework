@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Roboto-Regular.woff2') format('woff2');
-  font-weight: normal;
+  src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Roboto-Medium.woff2') format('woff2');
+  src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Roboto-Bold.woff2') format('woff2');
-  font-weight: bold;
+  src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0 15 px;
 }
@@ -52,6 +52,8 @@ body {
 .header-container{
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  padding: 25px;
 }
 .header-logo {
   margin-right: 93px;
@@ -63,6 +65,10 @@ body {
   /*flex: 1;*/
 }
 
+.header-item a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .header-item a.active {
   color: #2196F3;
@@ -85,7 +91,6 @@ body {
 
 
  /*HERO*/
-
  .hero {
   background: #2f302f;
   min-height: 600px;
@@ -124,28 +129,23 @@ body {
 }
 .global {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 -15px;
-  row-gap: 30px;
+  gap: 30px;
   
 }
 .about-container {
   width: 25%;
   height: 101px;
-  padding: 0 15px;
-  
-  
 }
 
 .about-details {
-  font-family: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
   margin-bottom: 10px;
 }
 .about-detail {
-  font-family: 400px;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 24px;
   color: #757575;
@@ -168,7 +168,7 @@ body {
 .doing-cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 -15px;
+  margin: 0 -15px;
   row-gap: 30px;
 }
 .doing-card {
@@ -198,7 +198,7 @@ body {
 .team-cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 -15px;
+  margin: 0 -15px;
   row-gap: 30px;
 }
 
@@ -240,6 +240,50 @@ body {
   
 }
 
+/*card*/
+.menu-cards {
+  width: 1170px;
+  margin: 0 auto;
+
+}
+.menu {
+  padding: 94px 0;
+
+ 
+}
+.container-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+.card {
+  text-decoration: none;
+}
+
+.card-img {
+  
+  
+}
+.card-content {
+  text-decoration: none;
+  border: 1px solid #EEEEEE; 
+}
+.card-title {
+ 
+  color: #212121;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 20px 24px;
+  letter-spacing: 1px;
+  
+}
+.card-description {
+  color: #757575;
+  line-height: 30px;
+  font-size: 400;
+
+}
 /*footer*/
 .footer {
   background: #2f302f;
